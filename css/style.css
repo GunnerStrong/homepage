@@ -1,0 +1,110 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+::after,
+::before {
+    box-sizing: inherit;
+}
+
+.main__paragraph {
+    color: rgb(86, 16, 16);
+}
+
+
+.main__image {
+    border-radius: 40px;
+    outline: 2px solid red;
+}
+
+
+.body {
+    max-width: 1000px;
+    margin: 0 auto;
+    font-family: 'Lato', sans-serif;
+    color: black;
+    padding: 20px;
+}
+
+
+
+.table__cell {
+    text-align: center;
+    border: 1px solid chocolate;
+}
+
+.table__row:nth-child(even) {
+    background: rgb(215, 207, 207);
+}
+
+.table__row:hover {
+    background: yellow;
+}
+
+.table__cell--header {
+    background-color: rgb(11, 88, 65);
+    color: white;
+    padding: 5px;
+}
+
+.link {
+    color: rgb(255, 102, 0);
+    text-decoration: none;
+}
+
+.link:focus {
+    outline: 2px solid currentColor;
+}
+
+.link:hover {
+    color: hsla(260, 66%, 49%, 0.763)
+}
+
+
+.navigation:hover {
+    color: rgb(106, 148, 29);
+    font-weight: bold;
+}
+
+.navigation__listElements {
+    list-style: none;
+    font-size: 110%;
+}
+
+.navigation__link {
+    color: rgb(105, 2, 17);
+}
+
+.dark {
+    color: aliceblue;
+    background-color: rgb(124, 133, 133);
+}
+
+.table {
+    overflow-x: auto;
+    border-collapse: collapse;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.section__header {
+    color: hsl(198, 83%, 25%)
+}
+
+.section__button {
+    margin: 40px;
+    border-top: 2px;
+    text-align: center;
+}
+
+.section__center {
+    text-align: center;
+}
+
+.footer__paragraph {
+    background-color: aqua;
+    text-align: center;
+    padding: 5px;
+    line-height: 2;
+}
