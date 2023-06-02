@@ -1,14 +1,23 @@
-console.log("Witam serdecznie");
+{
+    const welcome = () => {
+        console.log("Witam serdecznie");
+    }
+    
+    
+    const onChangeBacgroundClick = () => {
+        const body = document.querySelector(".body");
+        const themeName = document.querySelector(".themeName");
+        body.classList.toggle("dark");
+        themeName.innerText = body.classList.contains("dark") ? "jasne" : "ciemne";
+    };
+    
+    const init = () => {
+        const button = document.querySelector(".section__button");
+        button.addEventListener("click", onChangeBacgroundClick);
+        
+        welcome();
+    };
 
-
-let button = document.querySelector(".section__button");
-let body = document.querySelector(".body");
-let themeName = document.querySelector(".themeName");
-
-button.addEventListener("click", () => {
-    body.classList.toggle("dark");
-
-    themeName.innerText = body.classList.contains("dark") ? "jasne" : "ciemne";
-});
-
-
+    init ()
+    
+}
