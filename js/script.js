@@ -18,6 +18,6 @@
         welcome();
     };
 
-    init ()
+    init();
     
 }
